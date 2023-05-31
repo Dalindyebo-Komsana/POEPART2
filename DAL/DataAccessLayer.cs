@@ -18,10 +18,10 @@ namespace DAL
         SqlDataAdapter dbAdapter;
         DataTable dt;
 
-
+        
         public int InsertProduct(Product products)
         {
-
+            
             dbConnection.Open();
 
             string query = @"INSERT INTO Products (ProductName, ProductDescription, ProductDateSupplied, ProductType, Username)
@@ -39,7 +39,7 @@ namespace DAL
             dbConnection.Close();
             return x;
         }
-
+        
 
         /*Hashing the password*/
         public string EncryptData(string password)

@@ -28,7 +28,7 @@ namespace UploadingView
         {
 
         }
-        public DataTable GetModule()//A method to get the module data from the database to the app
+        public DataTable GetProduct()//A method to get the module data from the database to the app
         {
             dbConn.Open();
 
@@ -119,14 +119,16 @@ namespace UploadingView
             GetDropDownList();
 
         }
-        protected void btnClear_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MainPage.aspx");
-        }
+
 
         protected void txtDateSupplied_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MainPage.aspx");
         }
     }
 }
